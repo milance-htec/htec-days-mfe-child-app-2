@@ -95,6 +95,9 @@
     "exposes": {
       "./App": "./src/App"
     },
+    "remotes": {
+      "mnmMfeChildApp1": "mnmMfeChildApp1"
+    },
     "shared": {
       "@material-ui/core": "^4.11.0",
       "@material-ui/icons": "^4.9.1",
