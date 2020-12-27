@@ -9,22 +9,7 @@ import 'App.scss';
 const Input = React.lazy(() => import('mnmMfeChildApp1/components/Input'));
 
 function App() {
-  const { setItemList } = useMnM();
-
-  const [randomNumber, setRandomNumber] = useState(-1);
-
-  const setItemListIntervalHandler = () => {
-    setInterval(() => {
-      const generatedNumber = random(1, 10);
-      setRandomNumber(generatedNumber);
-      setItemList([generatedNumber]);
-    }, 5000);
-    return null;
-  };
-
-  useEffect(() => {
-    setItemListIntervalHandler();
-  }, []);
+  const { itemList = [] } = useMnM();
 
   return (
     <>
@@ -35,7 +20,9 @@ function App() {
       </React.Suspense>
 
       <div className="mfe-child-app-2">
-        <div>{`Generated item is: ${randomNumber}`}</div>
+        {itemList.map((item: string, index: number) => (
+          <div key={index}>{item}</div>
+        ))}
       </div>
     </>
   );
