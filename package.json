@@ -93,7 +93,8 @@
     },
     "filename": "static/js/remoteEntry.js",
     "exposes": {
-      "./App": "./src/App"
+      "./App": "./src/App",
+      "./components/Image": "./src/components/image.component"
     },
     "remotes": {
       "mnmMfeChildApp1": "mnmMfeChildApp1"
