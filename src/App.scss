@@ -1,6 +1,8 @@
 .mfe-child-app-2 {
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .mfe-child-app-2__heading {
@@ -11,4 +13,18 @@
 .mfe-child-app-2__image-component {
   width: 100px;
   height: 100px;
+}
+
+.mfe-child-app-2__list-item {
+  display: flex;
+  padding: 10px;
+  border: 1px black solid;
+  margin-bottom: 5px;
+  width: 50%;
+  margin-left: 5px;
+  justify-content: space-between;
+}
+
+.mfe-child-app-2__list-item--name {
+  margin-right: 5px;
 }
