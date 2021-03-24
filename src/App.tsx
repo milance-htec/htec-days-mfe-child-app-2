@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { useMnM } from '@mnm-tech/provider';
-import { LinearProgress } from '@material-ui/core';
 
 import 'App.scss';
 
